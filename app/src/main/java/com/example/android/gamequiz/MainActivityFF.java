@@ -37,7 +37,6 @@ public class MainActivityFF extends AppCompatActivity {
         buttonChoice1 = (Button)findViewById(R.id.choice1);
         buttonChoice2 = (Button)findViewById(R.id.choice2);
         buttonChoice3 = (Button)findViewById(R.id.choice3);
-
         updateQuestion();
 
         //Start of button listener for button1
