@@ -1,0 +1,37 @@
+<resources>
+    <string name="app_name">GameQuiz</string>
+    <string name="question1_ps_name_the_game">Question #1: Name the game</string>
+    <string name="answer1_q1_ps_last_of_us">The last of us</string>
+    <string name="answer2_q1_ps_zombie">Zombie attack</string>
+    <string name="answer3_q1_ps_ff10">Final Fantasy X</string>
+    <string name="question2_ps_name_the_game">Question #2: Name the game</string>
+    <string name="answer1_q2_spyro">Spyro</string>
+    <string name="answer2_q2_ps_overwatch">Overwatch</string>
+    <string name="answer3_q2_ps_crash">Crash Bandicoot</string>
+    <string name="question3_ps_name_the_game">Question #3: Name the game</string>
+    <string name="answer1_q3_ps_ff15">Final Fantasy XV</string>
+    <string name="answer2_q3_ps_dark_souls">Dark Souls</string>
+    <string name="answer3_q3_ps_horizon">Horizon Zero Dawn</string>
+    <string name="question4_ps_device_name">Question #4: What is the name of this device?</string>
+    <string name="question5_ps_two_souls">Question #5: Beyond two souls is available at the following consoles:</string>
+    <string name="answer1_q5_ps_ps3">Playstation 3</string>
+    <string name="answer2_q5_ps_ps4">Playstation 4</string>
+    <string name="answer3_q5_ps_vita">Playstation Vita</string>
+    <string name="question6_ps_rain">Question #6: What are Heavy Rain\'s Genre(s)?</string>
+    <string name="answer1_q6_ps_horror">Horror</string>
+    <string name="answer2_q6_ps_action">Action-adventure</string>
+    <string name="answer3_q6_ps_drama">Interactive drama</string>
+    <string name="question7_ps_name_the_character">Question #7:Name the character (The witcher: wild hunt)</string>
+    <string name="question7_ps_edit_text_hint_name_character">Name the character</string>
+    <string name="question8_ps_name_the_character">Question #8:Name the character (The witcher: wild hunt)</string>
+    <string name="question8_ps_edit_text_hint_name_character">Name the character</string>
+    <string name="question9_naugthy_dog">Question #9: Which of the following games were developed by naughty dog?</string>
+    <string name="answer1_q9_ps_last_of_us">The Last of Us</string>
+    <string name="answer2_q9_ps_uncharted">Uncharted 4: A Thief\'s End</string>
+    <string name="answer3_q6_ps_last">The Last of Us: Left Behind</string>
+    <string name="get_score">Press the button to get your score</string>
+    <string name="button_score">Check your score</string>
+    <string name="text_appear">Text will appear here</string>
+    <string name="score">Score: 0 out of 7</string>
+
+</resources>
