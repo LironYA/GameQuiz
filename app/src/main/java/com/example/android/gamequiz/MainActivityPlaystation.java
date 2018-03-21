@@ -22,13 +22,13 @@ public class MainActivityPlaystation extends AppCompatActivity {
     private TextView txtCheckBox, txtRadio;
     private Button button;
     private RadioGroup rgGroup1, rgGroup2, rgGroup3;
-    private CheckBox chkBox1_Q9, chkBox3_Q9, chkBox2_Q9, chkBox1_Q5, chkBox2_Q5, chkBox3_Q6, chkBox2_Q6;
-    final String Q7_Answer_option1 = "Geralt";
-    final String Q7_Answer_option2 = "Geralt of Rivia";
-    final String Q8_Answer = "Ciri";
-    final String Q4_Answer_option1 = "PlayStation Move";
-    final String Q4_Answer_option2 = "Playstation Move";
-    int count = 0;
+    private CheckBox chkBox1_Q9, chkBox3_Q9, chkBox2_Q9, chkBox1_Q5, chkBox2_Q5, chkBox3_Q6, chkBox2_Q6, chkBox1_Q6, chkBox3_Q5;
+    final String q7_Answer_option1 = "Geralt";
+    final String q7_Answer_option2 = "Geralt of Rivia";
+    final String q8_Answer = "Ciri";
+    final String q4_Answer_option1 = "PlayStation Move";
+    final String q4_Answer_option2 = "Playstation Move";
+    int count;
 
     /**
      * Called when the activity is first created.
@@ -65,8 +65,8 @@ public class MainActivityPlaystation extends AppCompatActivity {
     private boolean checkQuestion5() {
         chkBox1_Q5 = (CheckBox) findViewById(R.id.chkBox1_Q5);
         chkBox2_Q5 = (CheckBox) findViewById(R.id.chkBox2_Q5);
-    //    chkBox3_Q4 = (CheckBox) findViewById(R.id.chkBox3_Q4);
-        if (chkBox1_Q5.isChecked() && chkBox2_Q5.isChecked()) {
+        chkBox3_Q5 = (CheckBox) findViewById(R.id.chkBox3_Q5);
+        if (chkBox1_Q5.isChecked() && chkBox2_Q5.isChecked() && !chkBox3_Q5.isChecked()) {
             return true;
         }
         return false;
@@ -75,8 +75,8 @@ public class MainActivityPlaystation extends AppCompatActivity {
     private boolean checkQuestion6() {
         chkBox3_Q6 = (CheckBox) findViewById(R.id.chkBox3_Q6);
             chkBox2_Q6 = (CheckBox) findViewById(R.id.chkBox2_Q6);
-        //    chkBox3_Q4 = (CheckBox) findViewById(R.id.chkBox3_Q4);
-        if (chkBox3_Q6.isChecked() && chkBox2_Q6.isChecked()) {
+        chkBox1_Q6 = (CheckBox) findViewById(R.id.chkBox1_Q6);
+        if (chkBox3_Q6.isChecked() && !chkBox1_Q6.isChecked() && chkBox2_Q6.isChecked()) {
             return true;
         }
         return false;
@@ -139,16 +139,16 @@ public class MainActivityPlaystation extends AppCompatActivity {
         RadioButton radio3_q3 = (RadioButton)findViewById(R.id.radio3_Q3);
         if(radio3_q3.isChecked()){
             count++; }
-        if(checkQuestion4().equals(Q4_Answer_option1) || checkQuestion4().equals(Q4_Answer_option2)){
+        if(checkQuestion4().equals(q4_Answer_option1) || checkQuestion4().equals(q4_Answer_option2)){
         count++;}
         if(checkQuestion5()) {
             count++;}
             if(checkQuestion6()){
             count++;}
-            if(checkQuestion7().equals(Q7_Answer_option1) || checkQuestion7().equals(Q7_Answer_option2)) {
+            if(checkQuestion7().equals(q7_Answer_option1) || checkQuestion7().equals(q7_Answer_option2)) {
                 count++;
             }
-        if(checkQuestion8().equals(Q8_Answer)) {
+        if(checkQuestion8().equals(q8_Answer)) {
             count++;
         }
         if(checkQuestion9()) {
@@ -156,6 +156,8 @@ public class MainActivityPlaystation extends AppCompatActivity {
         }
         Toast.makeText(MainActivityPlaystation.this,"You've got " + count + " correct answers", Toast.LENGTH_LONG).show();
         txtRadio.setText("You've got " + count + " correct answers");
+        txtRadio.getResources().getString(R.string.get_score);
+        count = 0;
     }
     //Menu
     public boolean onCreateOptionsMenu(Menu menu) {

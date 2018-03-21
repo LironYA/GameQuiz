@@ -24,8 +24,8 @@ public class MainActivityFF extends AppCompatActivity {
     private Button buttonChoice3;
     private ImageView imageView;
     private String mAnswer;
-    private int mScore = 0;
-    private int mQuesNumber = 0;
+    private int mScore;
+    private int mQuesNumber;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

@@ -12,7 +12,7 @@ public class QuestionLibrary {
             R.drawable.portal,
     };
     //Questions Array
-    private String Questions[] = {
+    private String questions[] = {
             "Question #1: \"Stay awhile and listen\". who said that?",
             "Question #2: What kind of game \"World of Warcraft\" is?",
             "Question #3: When was Diablo II published?",
@@ -22,7 +22,7 @@ public class QuestionLibrary {
             "Question #7: Who are Portal's developers?",
     };
     //Answers array
-    private String Choices[][] = {
+    private String choices[][] = {
             {"Lilith", "Mephisto", "Deckard Cain"},
             {"MMORPG", "RPG", "Shooter"},
             {"2002", "2000", "1999"},
@@ -32,10 +32,10 @@ public class QuestionLibrary {
             {"Blizzard", "Valve", "Microsoft" }
     };
     //Correct answers array
-    private String CorrectAnswers[] = {"Deckard Cain", "MMORPG", "2000", "Diablo II", "Simulation", "MS-DOS", "Valve"};
+    private String correctAnswers[] = {"Deckard Cain", "MMORPG", "2000", "Diablo II", "Simulation", "MS-DOS", "Valve"};
 
     public String getQuestion(int questionNumber) {
-        String question = Questions[questionNumber];
+        String question = questions[questionNumber];
         return question;
     }
 
@@ -50,26 +50,26 @@ public class QuestionLibrary {
 
     public String getChoice1(int choiceNumber)
     {
-        String choice1 = Choices[choiceNumber][0];
+        String choice1 = choices[choiceNumber][0];
         return  choice1;
     }
 
     public String getChoice2(int choiceNumber){
-        String choice2 = Choices[choiceNumber][1];
+        String choice2 = choices[choiceNumber][1];
         return  choice2;
     }
 
     public String getChoice3(int choiceNumber){
-        String choice3 = Choices[choiceNumber][2];
+        String choice3 = choices[choiceNumber][2];
         return  choice3;
     }
 
     public String getCorrectAnswer(int queNumber){
-        String correctAns = CorrectAnswers[queNumber];
+        String correctAns = correctAnswers[queNumber];
         return correctAns;
     }
 
     public int getQuesArrayLength(){
-        return Questions.length;
+        return questions.length;
     }
 }
