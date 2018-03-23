@@ -179,7 +179,7 @@
             android:cropToPadding="false"
             android:src="@drawable/move" />
         <EditText
-            android:id="@+id/text_q4"
+            android:id="@+id/text_Q4"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:inputType="textCapWords"
@@ -286,7 +286,7 @@
             android:src="@drawable/thewitcher" />
 
         <EditText
-            android:id="@+id/text_q7"
+            android:id="@+id/text_Q7"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="@string/question7_ps_edit_text_hint_name_character"
@@ -309,7 +309,7 @@
             android:src="@drawable/ciri" />
 
         <EditText
-            android:id="@+id/text_q8"
+            android:id="@+id/text_Q8"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:inputType="textCapWords"
